@@ -38,4 +38,5 @@
         
         > 但是因为 `com.giovani.crm.service.BaseDictService` 的实现类 `com.giovani.crm.service.impl.BaseDictServiceImpl` 没有加上 `@Service` 注解，导致 `com.giovani.crm.controller.CustomerController` 无法注入 `com.giovani.crm.service.BaseDictService` 从而引发 `错误2`
     
-
+### 3. 静态页面显示不正常
+![Aaron Swartz](https://raw.githubusercontent.com/Giovani-Github/Giovani-resource/master/markdown-resource/giovani.jpg)
