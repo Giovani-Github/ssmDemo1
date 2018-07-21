@@ -13,7 +13,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 /**
@@ -55,15 +54,15 @@ public class CustomerController {
     public String list(Model model, QueryVo queryVo) {
 
         // 解决get编码问题
-        try {
-
-            if (queryVo.getCustName().trim() != "" && queryVo.getCustName() != null) {
-                queryVo.setCustName(new String(queryVo.getCustName().getBytes("ISO-8859-1"), "UTF-8"));
-            }
-
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
+        //        try {
+        //
+        //            if (queryVo.getCustName().trim() != "" && queryVo.getCustName() != null) {
+        //                queryVo.setCustName(new String(queryVo.getCustName().getBytes("ISO-8859-1"), "UTF-8"));
+        //            }
+        //
+        //        } catch (UnsupportedEncodingException e) {
+        //            e.printStackTrace();
+        //        }
 
         // 客户来源
         List<BaseDict> fromType = baseDictService.queryBaseDictByDictTypeCode(CUSTOMER_FROM_TYPE);
