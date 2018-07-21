@@ -51,3 +51,10 @@
 #### 3. 静态页面显示不正常
    + 错误3：加入静态资源(html/css/js)后，页面显示不正常
       ![Aaron Swartz](https://raw.githubusercontent.com/Giovani-Github/Giovani-resource/master/markdown-resource/2018-07-20_163507.png)
+
+
+
+####  4.encodingFilter报错
+
+需加入`ssmDemo1/lib`目录下的所有jar包
+
