@@ -56,5 +56,5 @@
 
 ####  4.encodingFilter报错
 
-需加入`ssmDemo1/lib`目录下的所有jar包
+需加入 `tomcat/lib/servlte-api.jar`
 
